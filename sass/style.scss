@@ -1,0 +1,110 @@
+@import "base";
+
+$bgcolor: #EEE;
+$link: blue;
+$accent: #bf2502;
+$nav: #222;
+$nav-button: #000;
+$gray: #EEE;
+$page: #FFF;
+
+
+//Structure
+
+body {
+	background-color: $bgcolor;
+}
+
+.main {
+	padding: 10px;
+}
+
+.article-bdy {
+	background-color: $page;
+	padding: 10px;
+	margin: 0 0 10px 0;
+}
+
+.timeline-bdy {
+	background-color: $accent;
+	padding: 10px;
+	position: fixed;
+	width: 100%;
+	top: 95%;
+
+	@include trans;
+	
+	&.active {
+		top: 40px;
+	}
+}
+
+//Type
+
+.h1 {
+	font-size: 22px;
+}
+
+.h2 {
+	font-size: 18px;
+}
+
+.h4 {
+	font-size: 14px;
+}
+
+.txt {
+	margin: 0 0 20px 0;
+}
+
+
+//Nav
+
+.nav {
+	height: 50px;
+	padding: 15px;
+	background-color: $nav;
+}
+
+.title {
+	text-align: center;
+	color: #CCC;
+}
+
+.nav-btn {
+	background-color: $nav-button;
+	display: block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+
+
+	&.left {
+		left: 8px;
+		top: 8px;
+	}
+
+	&.right {
+		right: 8px;
+		top: 8px;
+	}
+}
+
+.story-nav {
+	padding: 10px 0;
+}
+
+
+//Home screen
+
+.main-tz {
+	border-bottom: 1px solid $gray;
+	padding: 10px 0;
+}
+
+
+//Timeline
+
+.timeline-update {
+	margin: 0 0 8px 0;
+}

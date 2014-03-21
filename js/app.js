@@ -8,6 +8,10 @@ $(document).ready(function(){
 		showTimeline();
 	});
 
+	$('.article-bdy').on('click', function(){
+		expandArticle();
+	});
+
 });
 
 function reverseItems(){
@@ -16,10 +20,17 @@ function reverseItems(){
 		a.push(this);
 	});
 	a = a.reverse();
-	
-	$('.timeline-list').html(a);	
+
+	for(var i = 0; i<a.length; i++){
+		$('.timeline-list').append(a[i]);
+		setTimeout(1000);
+	}
 }
 
 function showTimeline(){
-	$('.timeline-bdy').toggleClass('active');
+	$('.article-bdy').toggleClass('hidden');
+}
+
+function expandArticle(){
+	$('.article-bdy').toggleClass('open');
 }

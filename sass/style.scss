@@ -22,15 +22,26 @@ body {
 .article-bdy {
 	background-color: $page;
 	padding: 10px;
-	margin: 0 0 10px 0;
+	margin: 50px 0 10px 0;
+	height: 300px;
+	overflow: hidden;
+	@include trans;
+
+	&.hidden {
+		height: 0px;
+		padding: 0;
+	}
+
+	&.open {
+		height: auto;
+		padding: 10px;
+	}
 }
 
 .timeline-bdy {
-	background-color: $accent;
 	padding: 10px;
-	position: fixed;
 	width: 100%;
-	top: 95%;
+	top: 100%;
 
 	@include trans;
 	
@@ -68,6 +79,9 @@ body {
 
 .title {
 	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
 	color: #CCC;
 }
 
@@ -92,6 +106,9 @@ body {
 
 .story-nav {
 	padding: 10px 0;
+	position: fixed;
+	width: 100%;
+	background-color: $bgcolor;
 }
 
 
@@ -107,4 +124,16 @@ body {
 
 .timeline-update {
 	margin: 0 0 8px 0;
+	padding: 6px 0;
+	border-bottom: 1px solid #CCC;
+
+	.h4 {
+		@include inline-block;
+		padding-left: 30px;
+	}
+}
+
+.update-num {
+	position: absolute;
+	width: 30px;
 }

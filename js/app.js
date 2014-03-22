@@ -5,24 +5,24 @@ $(document).ready(function(){
 		reverseItems();
 	});
 
-	// $('.story-nav').on('click', function(){
-	// 	showTimeline();
-	// });
-
-	$('.article-bdy').on('click', function(){
-		expandArticle();
+	$('.timeline-update').on('click', function(){
+		expandUpdate(this);
 	});
 
-	$('.timeline-trigger').on('click', function(){
-		expandTimeline();
+	// $('.timeline-update').on('click', function(){
+	// 	$(this).find('.article-overlay').toggleClass('active');
+	// });
+
+
+	$('.timeline-update').swipe({
+	  swipeLeft:function(event, direction, distance, duration, fingerCount) {
+	    $(this).find('.article-overlay').toggleClass('active');
+	  },
+  	  swipeRight:function(event, direction, distance, duration, fingerCount) {
+	    $(this).find('.article-overlay').toggleClass('active');
+	  }
 	});
 
-	// Taking this off for now to work on clicks.
-	// $('body').swipe({
-	//   swipeRight:function(event, direction, distance, duration, fingerCount) {
-	//     window.location.href = '/';
-	//   }
-	// });
 });
 
 
@@ -50,15 +50,7 @@ function appendItem(a, animation){
 	}
 }
 
-function showTimeline(){
-	$('.article-bdy').toggleClass('hidden');
-}
-
-function expandArticle(){
-	$('.article-bdy').toggleClass('open');
-	$('.article-jump').toggleClass('active');
-}
-
-function expandTimeline(){
-	$('.timeline-update.truncated').toggleClass('hidden');
+function expandUpdate(e){
+	$('.timeline-update').removeClass('open');
+	$(e).closest('.timeline-update').toggleClass('open');
 }

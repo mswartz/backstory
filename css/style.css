@@ -349,17 +349,17 @@ TIMELINE
   margin: 0 0 8px 0;
   padding: 6px 0;
   border-bottom: 1px solid #CCC;
+  overflow: hidden;
+}
+.timeline-update .timeline-text {
+  height: 0px;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
-  overflow: hidden;
-}
-.timeline-update .timeline-text {
-  display: none;
 }
 .timeline-update.open .timeline-text {
-  display: block;
+  height: 100px;
 }
 
 .update-num {
@@ -382,11 +382,23 @@ TIMELINE
 ARTICLE DETAIL
 
 *************************/
-.article-jump {
-  display: none;
+.article-overlay {
+  padding: 0;
+  background-color: #FFF;
+  height: 0;
+  position: relative;
+  width: 90%;
+  top: 60px;
+  left: 100%;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
-.article-jump.active {
-  display: block;
+.article-overlay.active {
+  left: 5%;
+  height: 1000px;
+  padding: 20px;
 }
 
 /*************************
@@ -396,6 +408,8 @@ LAYOUT STRUCTURE
 *************************/
 body {
   background-color: #eeeeee;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 .main {
@@ -444,11 +458,11 @@ TYPOGRAPHY
 }
 
 .h2 {
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .h4 {
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .txt {

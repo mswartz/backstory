@@ -4,10 +4,20 @@ ARTICLE DETAIL
 
 *************************/
 
-.article-jump {
-	display: none;
+.article-overlay {
+	padding: 0;
+	background-color: #FFF;
+	height: 0;
+	position: relative;
+	width: 90%;
+	top: 60px;
+	left: 100%;
+
+	@include trans;
 
 	&.active {
-		display: block;
+		left: 5%;
+		height: 1000px;		
+		padding: 20px;
 	}
 }

@@ -12,16 +12,16 @@ TIMELINE
 	margin: 0 0 8px 0;
 	padding: 6px 0;
 	border-bottom: 1px solid #CCC;
-	@include trans;
 	overflow: hidden;
 
 	.timeline-text {
-		display: none;
+		height: 0px;
+		@include trans;
 	}
 
 	&.open {
 		.timeline-text {
-			display: block;
+			height: 100px;
 		}
 	}
 }

@@ -9,14 +9,14 @@ ARTICLE DETAIL
 	background-color: #FFF;
 	height: 0;
 	position: relative;
-	width: 100%;
+	width: 110%;
 	top: 0px;
 	left: 100%;
 
 	@include trans;
 
 	&.active {
-		left: 5%;
+		left: -10%;
 		height: 1000px;		
 		padding: 20px;
 	}
@@ -78,7 +78,7 @@ TIMELINE
 *************************/
 
 .timeline-list {
-	margin: 30px 0 0 0;
+	margin: 50px 0 0 0;
 }
 
 .timeline-update {

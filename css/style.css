@@ -332,6 +332,7 @@ NAVIGATION
 .story-nav {
   padding: 10px 0;
   position: fixed;
+  z-index: 10000;
   width: 100%;
   background-color: #eeeeee;
 }
@@ -346,7 +347,7 @@ ARTICLE DETAIL
   background-color: #FFF;
   height: 0;
   position: relative;
-  width: 100%;
+  width: 110%;
   top: 0px;
   left: 100%;
   -webkit-transition: all 0.2s ease-in;
@@ -355,7 +356,7 @@ ARTICLE DETAIL
   transition: all 0.2s ease-in;
 }
 .article-overlay.active {
-  left: 5%;
+  left: -10%;
   height: 1000px;
   padding: 20px;
 }
@@ -416,7 +417,7 @@ TIMELINE
 
 *************************/
 .timeline-list {
-  margin: 30px 0 0 0;
+  margin: 50px 0 0 0;
 }
 
 .timeline-update {
@@ -665,15 +666,16 @@ TYPOGRAPHY
 }
 
 .h2 {
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .h4 {
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .txt {
   margin: 0 0 20px 0;
+  font-size: 14px;
 }
 
 .small {

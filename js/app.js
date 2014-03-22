@@ -5,10 +5,6 @@ $(document).ready(function(){
 		reverseItems();
 	});
 
-	$('.timeline-update').on('click', function(){
-		expandUpdate(this);
-	});
-
 	// $('.timeline-update').on('click', function(){
 	// 	$(this).find('.article-overlay').toggleClass('active');
 	// });
@@ -22,7 +18,12 @@ $(document).ready(function(){
 	    $(this).find('.article-overlay').toggleClass('active');
 	  },
 	  tap:function(){
-	  	expandUpdate(this);
+	  	if($(this).hasClass('open')){
+			$(this).removeClass('open');
+		} else {
+	  		$('.timeline-update').removeClass('open');
+			$(this).addClass('open');
+		}
 	  },
 	  doubleTap:function(){
 	    $(this).find('.article-overlay').toggleClass('active');
@@ -58,5 +59,5 @@ function appendItem(a, animation){
 
 function expandUpdate(e){
 	$('.timeline-update').removeClass('open');
-	$(e).closest('.timeline-update').toggleClass('open');
+	$(e).toggleClass('open');
 }

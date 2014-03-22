@@ -20,6 +20,12 @@ $(document).ready(function(){
 	  },
   	  swipeRight:function(event, direction, distance, duration, fingerCount) {
 	    $(this).find('.article-overlay').toggleClass('active');
+	  },
+	  tap:function(){
+	  	expandUpdate(this);
+	  },
+	  doubleTap:function(){
+	    $(this).find('.article-overlay').toggleClass('active');
 	  }
 	});
 

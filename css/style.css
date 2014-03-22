@@ -287,7 +287,7 @@ body {
 .article-bdy {
   background-color: white;
   padding: 10px;
-  margin: 50px 0 10px 0;
+  margin: 60px 0 10px 0;
   height: 300px;
   overflow: hidden;
   -webkit-transition: all 0.2s ease-in;
@@ -333,6 +333,13 @@ body {
   margin: 0 0 20px 0;
 }
 
+.small {
+  font-size: 12px;
+}
+.small.timestamp {
+  color: #bf2502;
+}
+
 .nav {
   height: 50px;
   padding: 15px;
@@ -341,10 +348,13 @@ body {
 
 .title {
   text-align: center;
-  text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 1px;
   color: #CCC;
+}
+
+.logo {
+  font-family: "Comfortaa";
 }
 
 .nav-btn {
@@ -379,6 +389,11 @@ body {
   margin: 0 0 8px 0;
   padding: 6px 0;
   border-bottom: 1px solid #CCC;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  overflow: hidden;
 }
 .timeline-update .h4 {
   display: -moz-inline-stack;
@@ -388,6 +403,14 @@ body {
   zoom: 1;
   *display: inline;
   padding-left: 30px;
+}
+.timeline-update.hidden {
+  padding: 0;
+  border: 0;
+  height: 0px;
+}
+.timeline-update.hidden .update-num {
+  display: none;
 }
 
 .update-num {

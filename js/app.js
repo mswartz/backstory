@@ -14,6 +14,10 @@ $(document).ready(function(){
 		expandArticle();
 	});
 
+	$('.timeline-trigger').on('click', function(){
+		expandTimeline();
+	});
+
 });
 
 function reverseItems(){
@@ -46,4 +50,8 @@ function showTimeline(){
 
 function expandArticle(){
 	$('.article-bdy').toggleClass('open');
+}
+
+function expandTimeline(){
+	$('.timeline-update.truncated').toggleClass('hidden');
 }

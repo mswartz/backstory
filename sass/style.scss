@@ -6,10 +6,10 @@ COLOR VARS
 
 *************************/
 
-$bgcolor: #EEE;
+$bgcolor: #2e2e2e;
 $link: blue;
 $accent: #bf2502;
-$nav: #222;
+$nav: $accent;
 $nav-button: #000;
 $gray: #CCC;
 $page: #FFF;
@@ -22,6 +22,7 @@ TYPE VARS
 *************************/
 
 $comfortaa: 'Comfortaa';
+$roboto: 'Roboto';
 
 
 /*************************
@@ -47,6 +48,30 @@ body {
 	background-color: $bgcolor;
 	overflow-x: hidden;
 	width: 100%;
+
+	@media(min-width: 600px){
+		&.jayz {
+			background-image: url(/img/jayz-bg.jpg);
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			@include background-size(cover);
+		}
+
+		&.philjackson {
+			background-image: url(/img/phil-jackson.jpg);
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			@include background-size(cover);
+		}
+
+		&.syria {
+			background-image: url(/img/syria.jpg);
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			@include background-size(cover);
+		}
+
+	}
 }
 
 .main {
@@ -83,6 +108,14 @@ body {
 	}
 }
 
+.timeline-container {
+	@media(min-width: 600px){
+		max-width: 400px;
+		padding: 0 10px;
+		margin: 0 0 0 50%;
+		background-color: rgba(255,255,255,.8);
+	}
+}
 
 .resp-img {
 	width: 100%;
@@ -96,6 +129,18 @@ TYPOGRAPHY
 
 .h1 {
 	font-size: 40px;
+}
+
+.tile-h1 {
+	font-size: 22px;
+	font-family: $roboto;
+
+	a {
+		text-decoration: none;
+		color: #FFF;
+		// @include box-shadow(rgba(0,0,0,.9) 0 0 600px);
+		@include text-shadow(rgba(0,0,0,.9) 0 0 25px);
+	}
 }
 
 .h2 {

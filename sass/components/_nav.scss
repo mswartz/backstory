@@ -25,8 +25,8 @@ NAVIGATION
 .nav-btn {
 	background-color: $nav-button;
 	display: block;
-	width: 30px;
-	height: 30px;
+	width: 25px;
+	height: 25px;
 	position: absolute;
 
 
@@ -42,9 +42,10 @@ NAVIGATION
 }
 
 .story-nav {
+	height: 40px;
 	padding: 10px 0;
 	position: fixed;
 	z-index: 10000;
 	width: 100%;
-	background-color: $bgcolor;
+	background-color: $nav;
 }

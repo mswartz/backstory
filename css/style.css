@@ -299,7 +299,7 @@ NAVIGATION
 .nav {
   height: 50px;
   padding: 15px;
-  background-color: #222222;
+  background-color: #bf2502;
 }
 
 .title {
@@ -316,8 +316,8 @@ NAVIGATION
 .nav-btn {
   background-color: black;
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   position: absolute;
 }
 .nav-btn.left {
@@ -330,11 +330,12 @@ NAVIGATION
 }
 
 .story-nav {
+  height: 40px;
   padding: 10px 0;
   position: fixed;
   z-index: 10000;
   width: 100%;
-  background-color: #eeeeee;
+  background-color: #bf2502;
 }
 
 /*************************
@@ -450,7 +451,7 @@ TIMELINE
 
 *************************/
 .timeline-list {
-  margin: 50px 0 0 0;
+  margin: 40px 0 0 0;
 }
 
 .timeline-update {
@@ -462,7 +463,7 @@ TIMELINE
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
-  background-color: #eeeeee;
+  background-color: #2e2e2e;
   position: relative;
   padding: 0px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -489,7 +490,7 @@ TIMELINE
   background-color: #FFF;
 }
 .timeline-update.read {
-  background-color: #eeeeee;
+  background-color: #2e2e2e;
 }
 .timeline-update.original .timeline-text {
   height: auto;
@@ -570,26 +571,6 @@ TIMELINE
   padding: 10px;
 }
 
-.related-mod {
-  margin-left: -0px;
-  *zoom: 1;
-}
-.related-mod:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.related-mod > .media-block {
-  float: left;
-  padding-left: 0px;
-  width: 50%;
-}
-.related-mod > .media-block:nth-of-type(2n+3) {
-  clear: left;
-}
-.related-mod > .media-block.n3 {
-  clear: left;
-}
 .related-mod .main-tz {
   min-height: 180px;
 }
@@ -601,7 +582,7 @@ HOME SCREEN
 *************************/
 @media (min-width: 599px) {
   .main-tz-mod {
-    margin-left: -20px;
+    margin-left: -10px;
     *zoom: 1;
   }
   .main-tz-mod:after {
@@ -611,7 +592,7 @@ HOME SCREEN
   }
   .main-tz-mod > .media-block {
     float: left;
-    padding-left: 20px;
+    padding-left: 10px;
     width: 50%;
   }
   .main-tz-mod > .media-block:nth-of-type(2n+3) {
@@ -623,19 +604,70 @@ HOME SCREEN
 }
 
 .main-tz {
-  border-bottom: 1px solid #cccccc;
+  opacity: .8;
   padding: 10px 0;
   background-color: #FFF;
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
   padding: 8px;
-  min-height: 120px;
+  min-height: 190px;
 }
 .main-tz.jayz {
-  background-image: url(/img/jayz.jpg);
+  background-image: url(/img/jayz-bg.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+.main-tz.philjackson {
+  background-image: url(/img/philjackson.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.main-tz.syria {
+  background-image: url(/img/syria.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.main-tz.gaymarriage {
+  background-image: url(/img/gaymarriage.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.main-tz.vick {
+  background-image: url(/img/vick.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.main-tz.cash {
+  background-image: url(/img/cash.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.main-tz:hover {
+  opacity: 1;
+}
+
+.tile-meta {
+  color: #CCC;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: -8px 0 20px -8px;
+  padding: 5px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
 }
 
 /*************************
@@ -644,9 +676,38 @@ LAYOUT STRUCTURE
 
 *************************/
 body {
-  background-color: #eeeeee;
+  background-color: #2e2e2e;
   overflow-x: hidden;
   width: 100%;
+}
+@media (min-width: 600px) {
+  body.jayz {
+    background-image: url(/img/jayz-bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  body.philjackson {
+    background-image: url(/img/phil-jackson.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  body.syria {
+    background-image: url(/img/syria.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 }
 
 .main {
@@ -685,6 +746,15 @@ body {
   top: 40px;
 }
 
+@media (min-width: 600px) {
+  .timeline-container {
+    max-width: 400px;
+    padding: 0 10px;
+    margin: 0 0 0 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+}
+
 .resp-img {
   width: 100%;
 }
@@ -696,6 +766,16 @@ TYPOGRAPHY
 *************************/
 .h1 {
   font-size: 40px;
+}
+
+.tile-h1 {
+  font-size: 22px;
+  font-family: "Roboto";
+}
+.tile-h1 a {
+  text-decoration: none;
+  color: #FFF;
+  text-shadow: rgba(0, 0, 0, 0.9) 0 0 25px;
 }
 
 .h2 {

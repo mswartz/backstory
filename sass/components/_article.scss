@@ -108,7 +108,7 @@ TIMELINE
 *************************/
 
 .timeline-list {
-	margin: 50px 0 0 0;
+	margin: 40px 0 0 0;
 }
 
 .timeline-update {
@@ -233,8 +233,6 @@ TIMELINE
 }
 
 .related-mod {
-	@include media-grid(2, 0px);
-
 	.main-tz {
 		min-height: 180px;
 	}

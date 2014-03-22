@@ -7,22 +7,60 @@ HOME SCREEN
 
 .main-tz-mod {
 	@media(min-width: 599px){
-		@include media-grid(2, 20px);
+		@include media-grid(2, 10px);
 	}
 }
 
 
 .main-tz {
-	border-bottom: 1px solid $gray;
+	opacity: .8;
 	padding: 10px 0;
 	background-color: #FFF;
-	margin: 0 0 20px 0;
+	margin: 0 0 10px 0;
 	padding: 8px;
-	min-height: 120px;
+	min-height: 190px;
 
 	&.jayz{
-		background-image: url(/img/jayz.jpg);
+		background-image: url(/img/jayz-bg.jpg);
 		@include background-size(cover);
 	}
+
+	&.philjackson{
+		background-image: url(/img/philjackson.jpg);
+		@include background-size(cover);
+	}
+
+	&.syria{
+		background-image: url(/img/syria.jpg);
+		@include background-size(cover);
+	}
+
+	&.gaymarriage{
+		background-image: url(/img/gaymarriage.jpg);
+		@include background-size(cover);
+	}
+
+	&.vick{
+		background-image: url(/img/vick.jpg);
+		@include background-size(cover);
+	}
+
+	&.cash{
+		background-image: url(/img/cash.jpg);
+		@include background-size(cover);
+	}
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
+
+.tile-meta {
+	color: #CCC;
+	background-color: rgba(0,0,0,.8);
+	margin: -8px 0 20px -8px;
+	padding: 5px;
+	@include inline-block;
 }
 

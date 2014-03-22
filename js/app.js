@@ -19,7 +19,7 @@ $(document).ready(function(){
 
 	$('body').swipe({
 	  swipeRight:function(event, direction, distance, duration, fingerCount) {
-	    alert('swiped');
+	    window.location.href = '/';
 	  }
 	});
 });

@@ -1,10 +1,13 @@
 var i = 0;
 
-$(document).ready(function(){
+jQuery(document).ready(function(){
 	$('#reverse').on('click', function(){
 		reverseItems();
 	});
 
+	$('#menu-trigger').on('click', function(){
+		$('.menu-drawer').toggleClass('active');
+	});
 
 	$('.timeline-update').swipe({
 	  swipeLeft:function(event, direction, distance, duration, fingerCount) {

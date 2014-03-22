@@ -313,6 +313,7 @@ NAVIGATION
 
 .logo {
   font-family: "Comfortaa";
+  font-size: 16px;
 }
 
 .nav-btn {
@@ -392,6 +393,7 @@ NAVIGATION
   left: -200px;
   width: 200px;
   z-index: 10000;
+  overflow-y: scroll;
 }
 .menu-drawer.active {
   left: 0;

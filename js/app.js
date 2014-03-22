@@ -16,6 +16,12 @@ $(document).ready(function(){
 	$('.timeline-trigger').on('click', function(){
 		expandTimeline();
 	});
+
+	$('body').swipe({
+	  swipeRight:function(event, direction, distance, duration, fingerCount) {
+	    alert('swiped');
+	  }
+	});
 });
 
 

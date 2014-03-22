@@ -276,6 +276,121 @@ button {
   margin-right: 0;
 }
 
+/*************************
+
+COLOR VARS
+
+*************************/
+/*************************
+
+TYPE VARS
+
+*************************/
+/*************************
+
+IMPORTS
+
+*************************/
+/*************************
+
+NAVIGATION
+
+*************************/
+.nav {
+  height: 50px;
+  padding: 15px;
+  background-color: #222222;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #CCC;
+}
+
+.logo {
+  font-family: "Comfortaa";
+}
+
+.nav-btn {
+  background-color: black;
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+.nav-btn.left {
+  left: 8px;
+  top: 8px;
+}
+.nav-btn.right {
+  right: 8px;
+  top: 8px;
+}
+
+.story-nav {
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  background-color: #eeeeee;
+}
+
+/*************************
+
+TIMELINE
+
+*************************/
+.timeline-update {
+  margin: 0 0 8px 0;
+  padding: 6px 0;
+  border-bottom: 1px solid #CCC;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  overflow: hidden;
+}
+.timeline-update .h4 {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  padding-left: 30px;
+}
+.timeline-update.hidden {
+  padding: 0;
+  border: 0;
+  height: 0px;
+}
+.timeline-update.hidden .update-num {
+  display: none;
+}
+
+.update-num {
+  position: absolute;
+  width: 30px;
+}
+
+/*************************
+
+ARTICLE DETAIL
+
+*************************/
+.article-jump {
+  display: none;
+}
+.article-jump.active {
+  display: block;
+}
+
+/*************************
+
+LAYOUT STRUCTURE
+
+*************************/
 body {
   background-color: #eeeeee;
 }
@@ -317,6 +432,11 @@ body {
   top: 40px;
 }
 
+/*************************
+
+TYPOGRAPHY
+
+*************************/
 .h1 {
   font-size: 22px;
 }
@@ -338,89 +458,4 @@ body {
 }
 .small.timestamp {
   color: #bf2502;
-}
-
-.nav {
-  height: 50px;
-  padding: 15px;
-  background-color: #222222;
-}
-
-.title {
-  text-align: center;
-  font-weight: bold;
-  letter-spacing: 1px;
-  color: #CCC;
-}
-
-.logo {
-  font-family: "Comfortaa";
-}
-
-.nav-btn {
-  background-color: black;
-  display: block;
-  width: 30px;
-  height: 30px;
-  position: absolute;
-}
-.nav-btn.left {
-  left: 8px;
-  top: 8px;
-}
-.nav-btn.right {
-  right: 8px;
-  top: 8px;
-}
-
-.story-nav {
-  padding: 10px 0;
-  position: fixed;
-  width: 100%;
-  background-color: #eeeeee;
-}
-
-.main-tz {
-  border-bottom: 1px solid #eeeeee;
-  padding: 10px 0;
-}
-
-.article-jump {
-  display: none;
-}
-.article-jump.active {
-  display: block;
-}
-
-.timeline-update {
-  margin: 0 0 8px 0;
-  padding: 6px 0;
-  border-bottom: 1px solid #CCC;
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-  overflow: hidden;
-}
-.timeline-update .h4 {
-  display: -moz-inline-stack;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  zoom: 1;
-  *display: inline;
-  padding-left: 30px;
-}
-.timeline-update.hidden {
-  padding: 0;
-  border: 0;
-  height: 0px;
-}
-.timeline-update.hidden .update-num {
-  display: none;
-}
-
-.update-num {
-  position: absolute;
-  width: 30px;
 }

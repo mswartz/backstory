@@ -1,5 +1,11 @@
 @import "base";
 
+/*************************
+
+COLOR VARS
+
+*************************/
+
 $bgcolor: #EEE;
 $link: blue;
 $accent: #bf2502;
@@ -8,10 +14,33 @@ $nav-button: #000;
 $gray: #EEE;
 $page: #FFF;
 
+
+/*************************
+
+TYPE VARS
+
+*************************/
+
 $comfortaa: 'Comfortaa';
 
 
-//Structure
+/*************************
+
+IMPORTS
+
+*************************/
+
+//Import the separate stylesheets
+@import "components/nav";
+@import "components/timeline";
+@import "components/article";
+
+
+/*************************
+
+LAYOUT STRUCTURE
+
+*************************/
 
 body {
 	background-color: $bgcolor;
@@ -52,7 +81,12 @@ body {
 	}
 }
 
-//Type
+
+/*************************
+
+TYPOGRAPHY
+
+*************************/
 
 .h1 {
 	font-size: 22px;
@@ -76,101 +110,4 @@ body {
 	&.timestamp {
 		color: $accent;
 	}
-}
-
-
-//Nav
-
-.nav {
-	height: 50px;
-	padding: 15px;
-	background-color: $nav;
-}
-
-.title {
-	text-align: center;
-	// text-transform: uppercase;
-	font-weight: bold;
-	letter-spacing: 1px;
-	color: #CCC;
-}
-
-.logo {
-	font-family: $comfortaa;
-}
-
-.nav-btn {
-	background-color: $nav-button;
-	display: block;
-	width: 30px;
-	height: 30px;
-	position: absolute;
-
-
-	&.left {
-		left: 8px;
-		top: 8px;
-	}
-
-	&.right {
-		right: 8px;
-		top: 8px;
-	}
-}
-
-.story-nav {
-	padding: 10px 0;
-	position: fixed;
-	width: 100%;
-	background-color: $bgcolor;
-}
-
-
-//Home screen
-
-.main-tz {
-	border-bottom: 1px solid $gray;
-	padding: 10px 0;
-}
-
-
-
-//Article page
-
-.article-jump {
-	display: none;
-
-	&.active {
-		display: block;
-	}
-}
-
-//Timeline
-
-.timeline-update {
-	margin: 0 0 8px 0;
-	padding: 6px 0;
-	border-bottom: 1px solid #CCC;
-	@include trans;
-	overflow: hidden;
-
-	.h4 {
-		@include inline-block;
-		padding-left: 30px;
-	}
-
-	&.hidden {
-		padding: 0;
-		border: 0;
-		height: 0px;
-
-		.update-num {
-			display: none;
-		}
-	}
-}
-
-.update-num {
-	position: absolute;
-	width: 30px;
 }

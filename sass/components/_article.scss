@@ -1,0 +1,13 @@
+/*************************
+
+ARTICLE DETAIL
+
+*************************/
+
+.article-jump {
+	display: none;
+
+	&.active {
+		display: block;
+	}
+}

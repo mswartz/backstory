@@ -1,0 +1,33 @@
+/*************************
+
+TIMELINE
+
+*************************/
+
+.timeline-update {
+	margin: 0 0 8px 0;
+	padding: 6px 0;
+	border-bottom: 1px solid #CCC;
+	@include trans;
+	overflow: hidden;
+
+	.h4 {
+		@include inline-block;
+		padding-left: 30px;
+	}
+
+	&.hidden {
+		padding: 0;
+		border: 0;
+		height: 0px;
+
+		.update-num {
+			display: none;
+		}
+	}
+}
+
+.update-num {
+	position: absolute;
+	width: 30px;
+}

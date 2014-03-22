@@ -1,0 +1,49 @@
+/*************************
+
+NAVIGATION
+
+*************************/
+
+.nav {
+	height: 50px;
+	padding: 15px;
+	background-color: $nav;
+}
+
+.title {
+	text-align: center;
+	// text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: #CCC;
+}
+
+.logo {
+	font-family: $comfortaa;
+}
+
+.nav-btn {
+	background-color: $nav-button;
+	display: block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+
+
+	&.left {
+		left: 8px;
+		top: 8px;
+	}
+
+	&.right {
+		right: 8px;
+		top: 8px;
+	}
+}
+
+.story-nav {
+	padding: 10px 0;
+	position: fixed;
+	width: 100%;
+	background-color: $bgcolor;
+}

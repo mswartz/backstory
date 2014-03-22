@@ -1,7 +1,6 @@
 var i = 0;
 
 $(document).ready(function(){
-
 	$('#reverse').on('click', function(){
 		reverseItems();
 	});
@@ -17,8 +16,8 @@ $(document).ready(function(){
 	$('.timeline-trigger').on('click', function(){
 		expandTimeline();
 	});
-
 });
+
 
 function reverseItems(){
 	i = 0;

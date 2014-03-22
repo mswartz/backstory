@@ -5,9 +5,9 @@ $(document).ready(function(){
 		reverseItems();
 	});
 
-	$('.story-nav').on('click', function(){
-		showTimeline();
-	});
+	// $('.story-nav').on('click', function(){
+	// 	showTimeline();
+	// });
 
 	$('.article-bdy').on('click', function(){
 		expandArticle();
@@ -17,11 +17,12 @@ $(document).ready(function(){
 		expandTimeline();
 	});
 
-	$('body').swipe({
-	  swipeRight:function(event, direction, distance, duration, fingerCount) {
-	    window.location.href = '/';
-	  }
-	});
+	// Taking this off for now to work on clicks.
+	// $('body').swipe({
+	//   swipeRight:function(event, direction, distance, duration, fingerCount) {
+	//     window.location.href = '/';
+	//   }
+	// });
 });
 
 

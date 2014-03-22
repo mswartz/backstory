@@ -341,6 +341,10 @@ NAVIGATION
 TIMELINE
 
 *************************/
+.timeline-list {
+  margin: 60px 0 0 0;
+}
+
 .timeline-update {
   margin: 0 0 8px 0;
   padding: 6px 0;
@@ -351,7 +355,19 @@ TIMELINE
   transition: all 0.2s ease-in;
   overflow: hidden;
 }
-.timeline-update .h4 {
+.timeline-update .timeline-text {
+  display: none;
+}
+.timeline-update.open .timeline-text {
+  display: block;
+}
+
+.update-num {
+  position: absolute;
+  width: 30px;
+}
+
+.timeline-bd {
   display: -moz-inline-stack;
   display: inline-block;
   vertical-align: middle;
@@ -359,19 +375,6 @@ TIMELINE
   zoom: 1;
   *display: inline;
   padding-left: 30px;
-}
-.timeline-update.hidden {
-  padding: 0;
-  border: 0;
-  height: 0px;
-}
-.timeline-update.hidden .update-num {
-  display: none;
-}
-
-.update-num {
-  position: absolute;
-  width: 30px;
 }
 
 /*************************
@@ -402,7 +405,6 @@ body {
 .article-bdy {
   background-color: white;
   padding: 10px;
-  margin: 60px 0 10px 0;
   height: 300px;
   overflow: hidden;
   -webkit-transition: all 0.2s ease-in;

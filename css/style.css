@@ -297,16 +297,18 @@ NAVIGATION
 
 *************************/
 .nav {
-  height: 50px;
-  padding: 15px;
-  background-color: #bf2502;
+  height: 40px;
+  padding: 10px;
+  background-color: #ed1846;
 }
 
 .title {
+  font-family: "Roboto";
+  color: #FFF;
+  font-weight: 400;
   text-align: center;
-  font-weight: bold;
+  font-size: 14px;
   letter-spacing: 1px;
-  color: #CCC;
 }
 
 .logo {
@@ -314,11 +316,15 @@ NAVIGATION
 }
 
 .nav-btn {
-  background-color: black;
   display: block;
   width: 25px;
   height: 25px;
   position: absolute;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 .nav-btn.left {
   left: 8px;
@@ -328,6 +334,40 @@ NAVIGATION
   right: 8px;
   top: 8px;
 }
+.nav-btn.back {
+  background-image: url(/img/back.svg);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.nav-btn.back:hover {
+  opacity: .5;
+}
+.nav-btn.reverse {
+  background-image: url(/img/reverse.svg);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.nav-btn.reverse:hover {
+  -webkit-transform: rotate(-360deg);
+  -moz-transform: rotate(-360deg);
+  -ms-transform: rotate(-360deg);
+  -o-transform: rotate(-360deg);
+  transform: rotate(-360deg);
+}
+.nav-btn.search {
+  background-image: url(/img/search.svg);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.nav-btn.menu {
+  background-image: url(/img/menu.svg);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 
 .story-nav {
   height: 40px;
@@ -335,7 +375,81 @@ NAVIGATION
   position: fixed;
   z-index: 10000;
   width: 100%;
-  background-color: #bf2502;
+  background-color: #ed1846;
+}
+
+.menu-drawer {
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  right: 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 40px;
+  bottom: 0;
+  left: -200px;
+  width: 200px;
+  z-index: 10000;
+}
+.menu-drawer.active {
+  left: 0;
+}
+
+.nav-search-input {
+  background-color: rgba(0, 0, 0, 0.9);
+  background-image: url(/img/search.svg);
+  background-size: 10%;
+  background-repeat: no-repeat;
+  background-position: right center;
+  border: 0;
+  width: 90%;
+  padding: 10px;
+}
+
+.nav-search, .nav-filters {
+  margin: 0 0 20px 0;
+  border-bottom: 1px solid #333;
+}
+
+.nav-filters li, .nav-trending li {
+  font-family: "Roboto";
+  color: #CCC;
+  font-size: 14px;
+  padding: 8px 0;
+}
+.nav-filters li:hover, .nav-trending li:hover {
+  color: #FFF;
+}
+
+.nav-filters li.favorites {
+  background-image: url(/img/star.svg);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 10%;
+  padding-left: 20px;
+}
+.nav-filters li.latest {
+  background-image: url(/img/lightning.svg);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 10%;
+  padding-left: 20px;
+}
+.nav-filters li.popular {
+  background-image: url(/img/popular.svg);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 10%;
+  padding-left: 20px;
+}
+.nav-filters li.trending {
+  background-image: url(/img/trending.svg);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 10%;
+  padding-left: 20px;
 }
 
 /*************************
@@ -369,7 +483,7 @@ ARTICLE DETAIL
   font-weight: bold;
 }
 .article-body-meta .source {
-  color: #bf2502;
+  color: #ed1846;
 }
 
 /*************************
@@ -481,7 +595,7 @@ TIMELINE
   background-image: url(/img/timeline.svg);
 }
 .timeline-update.open .update-num {
-  background-color: #bf2502;
+  background-color: #ed1846;
 }
 .timeline-update.open .timeline-text {
   height: 100px;
@@ -786,6 +900,12 @@ TYPOGRAPHY
   font-size: 22px;
 }
 
+.h5 {
+  font-family: "Roboto";
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
 .txt {
   margin: 0 0 20px 0;
   font-size: 14px;
@@ -795,5 +915,5 @@ TYPOGRAPHY
   font-size: 10px;
 }
 .small.timestamp {
-  color: #bf2502;
+  color: #ed1846;
 }

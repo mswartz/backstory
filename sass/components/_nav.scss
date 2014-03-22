@@ -5,17 +5,18 @@ NAVIGATION
 *************************/
 
 .nav {
-	height: 50px;
-	padding: 15px;
+	height: 40px;
+	padding: 10px;
 	background-color: $nav;
 }
 
 .title {
+	font-family: $roboto;
+	color: #FFF;
+	font-weight: 400;
 	text-align: center;
-	// text-transform: uppercase;
-	font-weight: bold;
+	font-size: 14px;
 	letter-spacing: 1px;
-	color: #CCC;
 }
 
 .logo {
@@ -23,12 +24,12 @@ NAVIGATION
 }
 
 .nav-btn {
-	background-color: $nav-button;
 	display: block;
 	width: 25px;
 	height: 25px;
 	position: absolute;
-
+	cursor: pointer;
+	@include trans;
 
 	&.left {
 		left: 8px;
@@ -39,6 +40,42 @@ NAVIGATION
 		right: 8px;
 		top: 8px;
 	}
+
+	&.back {
+		background-image: url(/img/back.svg);
+		background-size: 70%;
+		background-repeat: no-repeat;
+		background-position: center center;
+
+		&:hover {
+			opacity: .5;
+		}
+	}
+
+	&.reverse {
+		background-image: url(/img/reverse.svg);
+		background-size: 70%;
+		background-repeat: no-repeat;
+		background-position: center center;
+
+		&:hover {
+			@include rotate(-360deg);
+		}
+	}
+
+	&.search {
+		background-image: url(/img/search.svg);
+		background-size: 70%;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+
+	&.menu {
+		background-image: url(/img/menu.svg);
+		background-size: 70%;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
 }
 
 .story-nav {
@@ -48,4 +85,88 @@ NAVIGATION
 	z-index: 10000;
 	width: 100%;
 	background-color: $nav;
+}
+
+
+.menu-drawer {
+	@include trans;
+	right: 0;
+	padding: 20px;
+	background-color: rgba(0,0,0,.9);
+	position: absolute;
+	top: 40px;
+	bottom: 0;
+	left: -200px;
+	width: 200px;
+	z-index: 10000;
+
+	&.active {
+		left: 0;
+	}
+}
+
+.nav-search-input {
+	background-color: rgba(0,0,0,.9);
+	background-image: url(/img/search.svg);
+	background-size: 10%;
+	background-repeat: no-repeat;
+	background-position: right center;
+	border: 0;
+	width: 90%;
+	padding: 10px;
+
+}
+
+.nav-search, .nav-filters {
+	margin: 0 0 20px 0;
+	border-bottom: 1px solid #333;
+}
+
+.nav-filters, .nav-trending {
+	li {
+		font-family: $roboto;
+		color: #CCC;
+		font-size: 14px;
+		padding: 8px 0;
+
+		&:hover {
+			color: #FFF;
+		}
+	}
+}
+
+.nav-filters {
+	li {
+		&.favorites {
+			background-image: url(/img/star.svg);
+			background-position: left center;
+			background-repeat: no-repeat;
+			background-size: 10%;
+			padding-left: 20px;
+		}
+
+		&.latest {
+			background-image: url(/img/lightning.svg);
+			background-position: left center;
+			background-repeat: no-repeat;
+			background-size: 10%;
+			padding-left: 20px;
+		}
+
+		&.popular {
+			background-image: url(/img/popular.svg);
+			background-position: left center;
+			background-repeat: no-repeat;
+			background-size: 10%;
+			padding-left: 20px;
+		}
+
+		&.trending {
+			background-image: url(/img/trending.svg);
+			background-position: left center;
+			background-repeat: no-repeat;
+			background-size: 10%;
+			padding-left: 20px;
+		}
+	}
 }

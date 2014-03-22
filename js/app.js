@@ -5,10 +5,6 @@ $(document).ready(function(){
 		reverseItems();
 	});
 
-	// $('.timeline-update').on('click', function(){
-	// 	$(this).find('.article-overlay').toggleClass('active');
-	// });
-
 
 	$('.timeline-update').swipe({
 	  swipeLeft:function(event, direction, distance, duration, fingerCount) {

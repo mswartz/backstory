@@ -21,3 +21,39 @@ ARTICLE DETAIL
 		padding: 20px;
 	}
 }
+
+.article-thumb {
+	width: 70px;
+	height: 70px;
+	float: right;
+	margin: 0 0 0 5px;
+	
+	&.full {
+
+	}
+
+	img {
+		width: 100%;
+		margin: 0 0 5px 0;
+	}
+}
+
+.hotness {
+	@include inline-block;
+	width: 25px;
+	height: 10px;
+	background-image: url(/img/hotness.svg);
+	background-size: 40%;
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+.star {
+	@include inline-block;
+	width: 25px;
+	height: 10px;
+	background-image: url(/img/hotness.svg);
+	background-size: 40%;
+	background-repeat: no-repeat;
+	background-position: right top;
+}

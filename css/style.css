@@ -401,6 +401,47 @@ ARTICLE DETAIL
   padding: 20px;
 }
 
+.article-thumb {
+  width: 70px;
+  height: 70px;
+  float: right;
+  margin: 0 0 0 5px;
+}
+.article-thumb img {
+  width: 100%;
+  margin: 0 0 5px 0;
+}
+
+.hotness {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  width: 25px;
+  height: 10px;
+  background-image: url(/img/hotness.svg);
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.star {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  width: 25px;
+  height: 10px;
+  background-image: url(/img/hotness.svg);
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
 /*************************
 
 HOME SCREEN
@@ -514,7 +555,7 @@ TYPOGRAPHY
 }
 
 .small {
-  font-size: 12px;
+  font-size: 10px;
 }
 .small.timestamp {
   color: #bf2502;

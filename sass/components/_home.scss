@@ -4,7 +4,25 @@ HOME SCREEN
 
 *************************/
 
+
+.main-tz-mod {
+	@media(min-width: 599px){
+		@include media-grid(2, 20px);
+	}
+}
+
+
 .main-tz {
 	border-bottom: 1px solid $gray;
 	padding: 10px 0;
+	background-color: #FFF;
+	margin: 0 0 20px 0;
+	padding: 8px;
+	min-height: 120px;
+
+	&.jayz{
+		background-image: url(/img/jayz.jpg);
+		@include background-size(cover);
+	}
 }
+

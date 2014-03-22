@@ -403,6 +403,50 @@ ARTICLE DETAIL
 
 /*************************
 
+HOME SCREEN
+
+*************************/
+@media (min-width: 599px) {
+  .main-tz-mod {
+    margin-left: -20px;
+    *zoom: 1;
+  }
+  .main-tz-mod:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .main-tz-mod > .media-block {
+    float: left;
+    padding-left: 20px;
+    width: 50%;
+  }
+  .main-tz-mod > .media-block:nth-of-type(2n+3) {
+    clear: left;
+  }
+  .main-tz-mod > .media-block.n3 {
+    clear: left;
+  }
+}
+
+.main-tz {
+  border-bottom: 1px solid #eeeeee;
+  padding: 10px 0;
+  background-color: #FFF;
+  margin: 0 0 20px 0;
+  padding: 8px;
+  min-height: 120px;
+}
+.main-tz.jayz {
+  background-image: url(/img/jayz.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*************************
+
 LAYOUT STRUCTURE
 
 *************************/
@@ -454,11 +498,11 @@ TYPOGRAPHY
 
 *************************/
 .h1 {
-  font-size: 22px;
+  font-size: 40px;
 }
 
 .h2 {
-  font-size: 22px;
+  font-size: 24px;
 }
 
 .h4 {

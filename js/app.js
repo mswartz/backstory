@@ -1,3 +1,5 @@
+var i = 0;
+
 $(document).ready(function(){
 
 	$('#reverse').on('click', function(){
@@ -15,15 +17,26 @@ $(document).ready(function(){
 });
 
 function reverseItems(){
+	i = 0;
 	var a = [];
 	$('.timeline-update').each(function(){
 		a.push(this);
 	});
 	a = a.reverse();
 
-	for(var i = 0; i<a.length; i++){
+	$('.timeline-list').html(null);
+
+	var animation = setInterval(function(){ appendItem(a, animation) }, 50);
+}
+
+function appendItem(a, animation){
+	if(i < a.length){
 		$('.timeline-list').append(a[i]);
-		setTimeout(1000);
+		console.log(a[i]);
+		i++;
+	} else {
+		clearInterval(animation);
+		i = 0;
 	}
 }
 

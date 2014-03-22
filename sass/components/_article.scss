@@ -112,6 +112,14 @@ TIMELINE
 			height: 100px;
 		}
 	}
+
+	&.unread {
+		background-color: #FFF;
+	}
+
+	&.read {
+		background-color: $bgcolor;
+	}
 }
 
 .update-num {

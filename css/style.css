@@ -451,6 +451,12 @@ TIMELINE
 .timeline-update.open .timeline-text {
   height: 100px;
 }
+.timeline-update.unread {
+  background-color: #FFF;
+}
+.timeline-update.read {
+  background-color: #eeeeee;
+}
 
 .update-num {
   text-align: center;

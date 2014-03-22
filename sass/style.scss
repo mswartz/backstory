@@ -134,6 +134,17 @@ body {
 }
 
 
+
+//Article page
+
+.article-jump {
+	display: none;
+
+	&.active {
+		display: block;
+	}
+}
+
 //Timeline
 
 .timeline-update {

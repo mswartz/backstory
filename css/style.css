@@ -385,6 +385,13 @@ body {
   padding: 10px 0;
 }
 
+.article-jump {
+  display: none;
+}
+.article-jump.active {
+  display: block;
+}
+
 .timeline-update {
   margin: 0 0 8px 0;
   padding: 6px 0;

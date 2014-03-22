@@ -50,6 +50,7 @@ function showTimeline(){
 
 function expandArticle(){
 	$('.article-bdy').toggleClass('open');
+	$('.article-jump').toggleClass('active');
 }
 
 function expandTimeline(){

@@ -387,7 +387,7 @@ NAVIGATION
   right: 0;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.9);
-  position: absolute;
+  position: fixed;
   top: 40px;
   bottom: 0;
   left: -200px;
@@ -566,8 +566,10 @@ ARTICLE TOOLS
 TIMELINE
 
 *************************/
-.timeline-list {
-  margin: 40px 0 0 0;
+@media (min-width: 600px) {
+  .timeline-list {
+    margin-top: 40px;
+  }
 }
 
 .timeline-update {
@@ -579,7 +581,7 @@ TIMELINE
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
-  background-color: #2e2e2e;
+  background-color: #eeeeee;
   position: relative;
   padding: 0px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -608,12 +610,48 @@ TIMELINE
 .timeline-update.read {
   background-color: #2e2e2e;
 }
-.timeline-update.original .timeline-text {
-  height: auto;
+
+.story-header {
+  background-image: url(/img/timeline-gray.svg);
+  background-repeat: repeat-y;
+  background-position: 14px center;
+  background-size: 4px;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  background-color: #eeeeee;
+  position: relative;
+  padding: 40px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
-.timeline-update.original .timeline-text img {
-  width: 90%;
-  margin: 0 0 10px 0;
+.story-header .story-h1 {
+  color: #FFF;
+}
+.story-header .txt {
+  color: #FFF;
+}
+@media (max-width: 599px) {
+  .story-header.jayz {
+    background-image: url(/img/jayz-bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+@media (min-width: 600px) {
+  .story-header {
+    background: none;
+    position: fixed;
+    left: 40px;
+    width: 30%;
+    bottom: 30px;
+  }
 }
 
 .update-num {
@@ -631,7 +669,7 @@ TIMELINE
   margin-left: 5px;
   height: 20px;
   width: 20px;
-  background-color: #cccccc;
+  background-color: #d4d4d4;
 }
 .update-num.star {
   background-image: url(/img/star.svg);
@@ -682,13 +720,14 @@ TIMELINE
 }
 
 .related-stories {
-  background-color: #CCC;
+  background-color: #2e2e2e;
   margin: 0 0 20px 0;
   padding: 10px;
 }
 
 .related-mod .main-tz {
   min-height: 180px;
+  opacity: 1;
 }
 
 /*************************
@@ -867,7 +906,6 @@ body {
     max-width: 400px;
     padding: 0 10px;
     margin: 0 0 0 50%;
-    background-color: rgba(255, 255, 255, 0.8);
   }
 }
 
@@ -889,6 +927,16 @@ TYPOGRAPHY
   font-family: "Roboto";
 }
 .tile-h1 a {
+  text-decoration: none;
+  color: #FFF;
+  text-shadow: rgba(0, 0, 0, 0.9) 0 0 25px;
+}
+
+.story-h1 {
+  font-size: 32px;
+  font-family: "Roboto";
+}
+.story-h1 a {
   text-decoration: none;
   color: #FFF;
   text-shadow: rgba(0, 0, 0, 0.9) 0 0 25px;

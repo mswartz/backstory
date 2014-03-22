@@ -29,6 +29,12 @@ jQuery(document).ready(function(){
 	  }
 	});
 
+	$('.menu-drawer').swipe({
+	  swipeLeft:function(event, direction, distance, duration, fingerCount) {
+	    $(this).toggleClass('active');
+	  },
+	});
+
 });
 
 

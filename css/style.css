@@ -338,47 +338,6 @@ NAVIGATION
 
 /*************************
 
-TIMELINE
-
-*************************/
-.timeline-list {
-  margin: 60px 0 0 0;
-}
-
-.timeline-update {
-  margin: 0 0 8px 0;
-  padding: 6px 0;
-  border-bottom: 1px solid #CCC;
-  overflow: hidden;
-}
-.timeline-update .timeline-text {
-  height: 0px;
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-.timeline-update.open .timeline-text {
-  height: 100px;
-}
-
-.update-num {
-  position: absolute;
-  width: 30px;
-}
-
-.timeline-bd {
-  display: -moz-inline-stack;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  zoom: 1;
-  *display: inline;
-  padding-left: 30px;
-}
-
-/*************************
-
 ARTICLE DETAIL
 
 *************************/
@@ -387,8 +346,8 @@ ARTICLE DETAIL
   background-color: #FFF;
   height: 0;
   position: relative;
-  width: 90%;
-  top: 60px;
+  width: 100%;
+  top: 0px;
   left: 100%;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
@@ -401,6 +360,11 @@ ARTICLE DETAIL
   padding: 20px;
 }
 
+/*************************
+
+ARTICLE TOOLS
+
+*************************/
 .article-thumb {
   width: 70px;
   height: 70px;
@@ -410,6 +374,10 @@ ARTICLE DETAIL
 .article-thumb img {
   width: 100%;
   margin: 0 0 5px 0;
+}
+
+.article-meta {
+  padding: 5px 0;
 }
 
 .hotness {
@@ -436,10 +404,106 @@ ARTICLE DETAIL
   *display: inline;
   width: 25px;
   height: 10px;
-  background-image: url(/img/hotness.svg);
+  background-image: url(/img/star.svg);
   background-size: 40%;
   background-repeat: no-repeat;
   background-position: right top;
+}
+
+/*************************
+
+TIMELINE
+
+*************************/
+.timeline-list {
+  margin: 30px 0 0 0;
+}
+
+.timeline-update {
+  background-image: url(/img/timeline-gray.svg);
+  background-repeat: repeat-y;
+  background-position: 14px center;
+  background-size: 4px;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  background-color: #eeeeee;
+  position: relative;
+  padding: 0px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.timeline-update .timeline-text {
+  height: 0px;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.timeline-update.open {
+  padding: 20px 0;
+  background-image: url(/img/timeline.svg);
+}
+.timeline-update.open .update-num {
+  background-color: #bf2502;
+}
+.timeline-update.open .timeline-text {
+  height: 100px;
+}
+
+.update-num {
+  text-align: center;
+  font-size: 10px;
+  padding: 4px 0 0 0;
+  color: #FFF;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 5px;
+  height: 20px;
+  width: 20px;
+  background-color: #cccccc;
+}
+
+.timeline-bd {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  margin-top: 10px;
+  padding-left: 40px;
+}
+
+.open .updates-future, .open .updates-past {
+  opacity: 1;
+}
+
+.updates-future, .updates-past {
+  text-align: center;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  opacity: 0;
+  z-index: 10000;
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.updates-future {
+  top: 0px;
+}
+
+.updates-past {
+  bottom: 0px;
 }
 
 /*************************
@@ -471,7 +535,7 @@ HOME SCREEN
 }
 
 .main-tz {
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #cccccc;
   padding: 10px 0;
   background-color: #FFF;
   margin: 0 0 20px 0;

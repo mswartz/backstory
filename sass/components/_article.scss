@@ -9,8 +9,8 @@ ARTICLE DETAIL
 	background-color: #FFF;
 	height: 0;
 	position: relative;
-	width: 90%;
-	top: 60px;
+	width: 100%;
+	top: 0px;
 	left: 100%;
 
 	@include trans;
@@ -21,6 +21,14 @@ ARTICLE DETAIL
 		padding: 20px;
 	}
 }
+
+
+/*************************
+
+ARTICLE TOOLS
+
+*************************/
+
 
 .article-thumb {
 	width: 70px;
@@ -38,6 +46,10 @@ ARTICLE DETAIL
 	}
 }
 
+.article-meta {
+	padding: 5px 0;
+}
+
 .hotness {
 	@include inline-block;
 	width: 25px;
@@ -52,8 +64,97 @@ ARTICLE DETAIL
 	@include inline-block;
 	width: 25px;
 	height: 10px;
-	background-image: url(/img/hotness.svg);
+	background-image: url(/img/star.svg);
 	background-size: 40%;
 	background-repeat: no-repeat;
 	background-position: right top;
+}
+
+
+/*************************
+
+TIMELINE
+
+*************************/
+
+.timeline-list {
+	margin: 30px 0 0 0;
+}
+
+.timeline-update {
+	background-image: url(/img/timeline-gray.svg);
+	background-repeat: repeat-y;
+	background-position: 14px center;
+	background-size: 4px;
+	@include trans;
+
+	background-color: $bgcolor;
+
+	position: relative;
+	padding: 0px 0;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	overflow: hidden;
+
+	.timeline-text {
+		height: 0px;
+		@include trans;
+	}
+
+	&.open {
+		padding: 20px 0;
+		background-image: url(/img/timeline.svg);
+
+		.update-num {
+			background-color: $accent;
+		}
+
+		.timeline-text {
+			height: 100px;
+		}
+	}
+}
+
+.update-num {
+	text-align: center;
+	font-size: 10px;
+	padding: 4px 0 0 0;
+	color: #FFF;
+	@include border-radius(30px);
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 5px;
+	height: 20px;
+	width: 20px;
+	background-color: $gray;
+}
+
+.timeline-bd {
+	@include inline-block;
+	margin-top: 10px;
+	padding-left: 40px;
+}
+
+
+.open {
+	.updates-future, .updates-past {
+		opacity: 1;
+	}
+}
+
+.updates-future, .updates-past {
+	text-align: center;
+	@include trans;
+	opacity: 0;
+	z-index: 10000;
+	position: absolute;
+	width: 100%;
+	background-color: rgba(0,0,0,.15);
+}
+
+.updates-future {
+	top: 0px;
+}
+
+.updates-past {
+	bottom: 0px;
 }

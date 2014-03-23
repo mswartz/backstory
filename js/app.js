@@ -9,6 +9,10 @@ jQuery(document).ready(function(){
 		$('.menu-drawer').toggleClass('active');
 	});
 
+	$('#panel-trigger').on('click', function(){
+		$('.story-header-panel').toggleClass('active');
+	});
+
 	$('.timeline-update').swipe({
 	  swipeLeft:function(event, direction, distance, duration, fingerCount) {
 	    $(this).find('.article-overlay').toggleClass('active');

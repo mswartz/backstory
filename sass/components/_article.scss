@@ -176,6 +176,17 @@ TIMELINE
 		color: #FFF;
 	}
 
+	@media(max-width: 600px){
+		.story-header-panel {
+			@include trans;
+			overflow: hidden;
+			height: 0;
+
+			&.active {
+				height: 150px;
+			}
+		}
+	}
 
 	@media(max-width:599px){
 		&.jayz {

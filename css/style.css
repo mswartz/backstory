@@ -626,6 +626,19 @@ TIMELINE
 .story-header .txt {
   color: #FFF;
 }
+@media (max-width: 600px) {
+  .story-header .story-header-panel {
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    overflow: hidden;
+    height: 0;
+  }
+  .story-header .story-header-panel.active {
+    height: 150px;
+  }
+}
 @media (max-width: 599px) {
   .story-header.jayz {
     background-image: url(/img/jayz-bg.jpg);

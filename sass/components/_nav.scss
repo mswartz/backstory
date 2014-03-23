@@ -8,6 +8,9 @@ NAVIGATION
 	height: 40px;
 	padding: 10px;
 	background-color: $nav;
+	position: fixed;
+	z-index: 10000;
+	width: 100%;
 }
 
 .title {
@@ -77,15 +80,6 @@ NAVIGATION
 		background-repeat: no-repeat;
 		background-position: center center;
 	}
-}
-
-.story-nav {
-	height: 40px;
-	padding: 10px 0;
-	position: fixed;
-	z-index: 10000;
-	width: 100%;
-	background-color: $nav;
 }
 
 

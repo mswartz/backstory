@@ -300,6 +300,9 @@ NAVIGATION
   height: 40px;
   padding: 10px;
   background-color: #ed1846;
+  position: fixed;
+  z-index: 10000;
+  width: 100%;
 }
 
 .title {
@@ -368,15 +371,6 @@ NAVIGATION
   background-size: 70%;
   background-repeat: no-repeat;
   background-position: center center;
-}
-
-.story-nav {
-  height: 40px;
-  padding: 10px 0;
-  position: fixed;
-  z-index: 10000;
-  width: 100%;
-  background-color: #ed1846;
 }
 
 .menu-drawer {
@@ -905,7 +899,7 @@ body {
   .timeline-container {
     max-width: 400px;
     padding: 0 10px;
-    margin: 0 0 0 50%;
+    margin: 0 0 0 55%;
   }
 }
 
@@ -948,6 +942,7 @@ TYPOGRAPHY
 
 .h4 {
   font-size: 22px;
+  font-family: "Roboto";
 }
 
 .h5 {

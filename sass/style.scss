@@ -112,7 +112,7 @@ body {
 	@media(min-width: 600px){
 		max-width: 400px;
 		padding: 0 10px;
-		margin: 0 0 0 50%;
+		margin: 0 0 0 55%;
 		// background-color: rgba(255,255,255,.8);
 	}
 }
@@ -162,6 +162,7 @@ TYPOGRAPHY
 
 .h4 {
 	font-size: 22px;
+	font-family: $roboto;
 }
 
 .h5 {

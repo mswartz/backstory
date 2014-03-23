@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Backstory</title>
+	<title>SNDMakes app: Backstory</title>
+
 	<meta name="apple-mobile-web-app-capable" content="yes" />
  	<meta name="viewport" content="width=device-width, user-scalable=no">
  	<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
@@ -10,186 +11,72 @@
 	<link href='http://fonts.googleapis.com/css?family=Comfortaa:400,700,300' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,900,700,500,300,100' rel='stylesheet' type='text/css'>
 
-	<script src="bower_components/jquery/dist/jquery.min.js"></script>
-
 
 	<link href="css/style.css" rel="stylesheet" type="text/css"/>
-	<script src="js/app.js"></script>
 
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 </head>
-<body>
+<body class="docs">
 
-	<nav class="nav">
-		<div id="menu-trigger" class="nav-btn left menu"></div>
-		<div class="title logo">backstory</div>
-		<div class="nav-btn right user"></div>
-	</nav>
-
-	<div class="menu-drawer">
-		<div class="nav-search">
-			<input class="nav-search-input" type="input"/>
-		</div>
-
-		<div class="nav-filters">
-			<h5 class="h5">Filter By</h5>
-			<ul class="filters">
-				<li class="latest"><a href="index.html">Latest</a></li>
-				<li class="popular"><a href="index.html">Popular</a></li>
-				<li class="trending"><a href="index.html">Trending</a></li>
-				<li class="favorites"><a href="index.html">Favorites</a></li>
-			</ul>
-		</div>
-
-		<div class="nav-trending">
-			<h5 class="h5">Trending</h5>
-			<ul class="trending">
-				<li><a href="article.html">JayZ</a></li>
-				<li><a href="malaysia.html">Flight MH370</a></li>
-				<li><a href="sndmakes.html">SNDMakes</a></li>
-				<li>Beyonce</li>
-				<li>Knicks</li>
-				<li>March Madness</li>
-				<li>JayZ</li>
-				<li>Beyonce</li>
-				<li>Knicks</li>
-				<li>March Madness</li>
-				<li>JayZ</li>
-				<li>Beyonce</li>
-				<li>Knicks</li>
-				<li>March Madness</li>
-				<li>JayZ</li>
-				<li>Beyonce</li>
-				<li>Knicks</li>
-				<li>March Madness</li>
-				<li>JayZ</li>
-				<li>Beyonce</li>
-				<li>Knicks</li>
-				<li>March Madness</li>
-				<li>JayZ</li>
-				<li>Beyonce</li>
-				<li>Knicks</li>
-				<li>March Madness</li>
-			</ul>
-		</div>
+	<div class="docs-splash">
 	</div>
 
-	<div class="main">
-		<div class="main-tz-mod">
+	<div class="docs-mod">
+		<h1 class="h1">Backstory: an idea for putting the news in order</h1>
+		<p class="byline">By <a href="http://twitter.com/mattgelfand">Matt Gelfand</a>, <a href="http://twitter.com/teenyrobots">Joyce Rice</a>, <a href="http://twitter.com/brunning">Ben Running</a>, <a href="http://twitter.com/realgoodwill">Will Royal</a> and <a href="http://twitter.com/m_swartz">Mike Swartz</a></p>
 
-		<div class="home-cover">
-			<div class="col-1">
-				<div class="main-tz lead-tz sndmakes">
-					<div class="tile-meta">
-						<small class="timestamp">22 mins</small>
-						<small class="timestamp">SND</small>
-						<div class="star"></div>
-					</div>
-					<h2 class="tile-h1"><a href="sndmakes.html">
-					SND Makes Comes to Indy 
-					</a></h2>
-				</div>
-			</div>
+		<p class="txt">Our team set out to answer the question of "How might we better help readers understand stories by improving the context?". Over a two day hackathon in March 2014, we built Backstory. It's a visual and structural prototype that got us thinking about how we present the news. Read on or <a href="home.html">demo the prototype</a>.</p>
 
-			<div class="col-2">
-				<div class="main-tz off-lead-tz jayz">
-					<div class="tile-meta">
-						<small class="timestamp">22 mins</small>
-						<small class="timestamp">JayZ</small>
-						<div class="star"></div>
-					</div>
-					<h2 class="tile-h1"><a href="article.html">
-					Jay Z's Magna Carta Holy Grail Goes Platinum 
-					</a></h2>
-				</div>
-
-				<div class="main-tz off-lead-tz malaysia">
-					<div class="tile-meta">
-						<small class="timestamp">1 day</small>
-						<small class="timestamp">MH370</small>
-						<div class="star"></div>
-					</div>
-					<h2 class="tile-h1"><a href="malaysia.html">
-					Debris Found in the Indian Ocean
-					</a></h2>
-				</div>
-			</div>
-		</div><!-- home-cover -->
-
-	<div class="home-tiles">
-
-		<div class="media-block">
-			<div class="main-tz syria">
-				<div class="tile-meta">
-					<small class="timestamp">1 day</small>
-					<small class="timestamp">Syria</small>
-					<div class="star"></div>
-				</div>
-				<h2 class="tile-h1"><a href="article.html">
-				Syrian Rebels Capture Assad Stronghold
-				</a></h2>
-			</div>
-		</div>
+		<figure class="docs-visual full">
+			<img src="/img/docs-cover.jpg"/>
+		</figure>
 
 
-		<div class="media-block">
-			<div class="main-tz philjackson">
-				<div class="tile-meta">
-					<small class="timestamp">2 hours</small>
-					<small class="timestamp">Phil Jackson</small>
-					<div class="star"></div>
-				</div>
-				<h2 class="tile-h1"><a href="article.html">
-				Phil Jackson's First Game with the NY Knicks
-				</a></h2>
-			</div>
-		</div>
+		<h3 class="docs-h3">Stories are collections</h3>
+		<p class="txt">One of the key concepts is that stories are really collections of individual updates. When we read a new story, we want to know its relationship to the bigger picture. Each story as presented on the homepage is really just and entry point into the context of the larger narrative.</p>
 
-		<div class="media-block">
-			<div class="main-tz vick">
-				<div class="tile-meta">
-					<small class="timestamp">3 days</small>
-					<small class="timestamp">Michael Vick</small>
-					<div class="star"></div>
-				</div>
-				<h2 class="tile-h1"><a href="article.html">
-				Michael Vick Bitten By Dogs
-				</a></h2>
-			</div>
-		</div>
+		<figure class="docs-visual full">
+			<img src="/img/docs-layouts.jpg"/>
+		</figure>
 
-		<div class="media-block">
-			<div class="main-tz gaymarriage">
-				<div class="tile-meta">
-					<small class="timestamp">1 week</small>
-					<small class="timestamp">Gay Marriage</small>
-					<div class="star"></div>
-				</div>
-				<h2 class="tile-h1"><a href="article.html">
-					Prop 8 Struck Down in California
-				</a></h2>
-			</div>
-		</div>
 
-		<div class="media-block">
-			<div class="main-tz cash">
-				<div class="tile-meta">
-					<small class="timestamp">2 weeks</small>
-					<small class="timestamp">Johnny Cash</small>
-					<div class="star"></div>
-				</div>
-				<h2 class="tile-h1"><a href="article.html">
-					Johnny Cash's Granddaughter Found Dead in Nashville
-				</a></h2>
-			</div>
-		</div>
+		<h3 class="docs-h3">News on a timeline</h3>
+		<p class="txt">The idea is that each story is really a topic with an initial event and a series of updates. While reading one of these updates, the reader is always in the context of the story's narrative arc, and can easily figure out what happened up to the present point in the timeline. Unread or new stories are called out, giving the user a quick way of seeing where they are in the timeline.</p>
 
+		<figure class="docs-visual full">
+			<img src="/img/docs-video.jpg"/>
+		</figure>
+
+
+		<h3 class="docs-h3">Multiple levels of engagement</h3>
+		<p class="txt">The goal of the UI is to give readers a lightweight, engaging way to interact with a story. Users enter a story’s timeline at the point they last left off, and have the ability to either move forward to read new information, or dive into the backstory to see past updates.</p>
+
+		<p class="txt">Users can engage with events and topics on 3 levels - A scannable list of headlines, a summary mode with a thumbnail and brief description, and a complete article mode, showing the full text of a story, video, photos, and other media.</p>
+
+		<figure class="docs-visual full">
+			<img src="/img/docs-reorder.jpg"/>
+		</figure>
+
+
+		<h3 class="docs-h3">Switch your context</h3>
+		<p class="txt">We also developed a concept of 'flipping' the timeline. If a reader wants to experience the story from the original event up until the present update, a quick button tap reorders the timeline from the first update to the last.</p>
+
+
+
+		<figure class="docs-visual full">
+			<img src="/img/docs-mobile.jpg"/>
+		</figure>
+
+		<h3 class="docs-h3">Find stories that matter to you</h3>
+		<p class="txt">We had a lot of ideas about how a reader could find different stories or hop frmo one story to the next. Each story would have key players that allow the user to pivot to a different but related narrative. And by logging in, a user could subscribe to stories that matter to them or see what their friends are tracking.</p>
+
+		<p class="txt">We had a ton of fun making this thing, and want to thank <a href="http://www.snd.org">SND</a> for organizing an awesome group and giving us a great challenge.</p>
+
+
+		<a class="docs-btn" href="index.html">Demo the live site!</a>
 	</div>
 
-		<div class="footer">
-	<h4 class="h4">Who made this thing?</h4>
-	<p class="txt">Well, <a href="http://twitter.com/mattgelfand">Matt Gelfand</a>, <a href="http://twitter.com/teenyrobots">Joyce Rice</a>, <a href="http://twitter.com/brunning">Ben Running</a>, <a href="http://twitter.com/realgoodwill">Will Royal</a> and <a href="http://twitter.com/m_swartz">Mike Swartz</a> made it at SNDMakes 2014!</p>
-
-	<p class="txt">Check the repo at <a href="http://github.com/mswartz/backstory">github.com/mswartz/backstory.</a></p>
+	<div class="docs-splash bottom">
 	</div>
 
 </body>

@@ -476,6 +476,11 @@ NAVIGATION
   -o-background-size: 100%;
   background-size: 100%;
 }
+@media (min-width: 600px) {
+  .docs-splash {
+    height: 270px;
+  }
+}
 @media (min-width: 800px) {
   .docs-splash {
     height: 350px;

@@ -11,6 +11,10 @@
 	background-repeat: no-repeat;
 	@include background-size(100%);
 
+	@media(min-width: 600px){
+		height: 270px;
+	}
+
 	@media(min-width: 800px){
 		height: 350px;
 	}

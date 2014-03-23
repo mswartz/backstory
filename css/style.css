@@ -646,7 +646,7 @@ TIMELINE
 }
 @media (max-width: 599px) {
   .story-header.jayz {
-    background-image: url(/img/malaysia-plane.jpg);
+    background-image: url(/img/jayz-bg.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -657,6 +657,16 @@ TIMELINE
   }
   .story-header.sndmakes {
     background-image: url(/img/sndmakes.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .story-header.malaysia {
+    background-image: url(/img/malaysia-plane.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -848,7 +858,7 @@ HOME SCREEN
   min-height: 190px;
 }
 .main-tz.jayz {
-  background-image: url(/img/malaysia-plane.jpg);
+  background-image: url(/img/jayz-bg.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -889,6 +899,20 @@ HOME SCREEN
   -o-background-size: cover;
   background-size: cover;
 }
+.main-tz.sndmakes {
+  background-image: url(/img/sndmakes.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.main-tz.malaysia {
+  background-image: url(/img/malaysia-plane.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .main-tz:hover {
   opacity: 1;
 }
@@ -918,7 +942,7 @@ body {
 }
 @media (min-width: 600px) {
   body.jayz {
-    background-image: url(/img/malaysia-plane.jpg);
+    background-image: url(/img/jayz-bg.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -946,6 +970,15 @@ body {
   }
   body.sndmakes {
     background-image: url(/img/sndmakes.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  body.malaysia {
+    background-image: url(/img/malaysia-plane.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     -webkit-background-size: cover;

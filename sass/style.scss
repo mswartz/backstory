@@ -78,6 +78,13 @@ body {
 			@include background-size(cover);
 		}
 
+		&.malaysia {
+			background-image: url(/img/malaysia-plane.jpg);
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			@include background-size(cover);
+		}
+
 	}
 }
 

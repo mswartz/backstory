@@ -205,6 +205,14 @@ TIMELINE
 			@include background-size(cover);
 		}
 
+		&.malaysia {
+			background-image: url(/img/malaysia-plane.jpg);
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			background-position: center center;
+			@include background-size(cover);
+		}
+
 	}
 
 	@media(min-width:600px){

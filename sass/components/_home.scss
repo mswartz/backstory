@@ -89,6 +89,16 @@ HOME SCREEN
 		@include background-size(cover);
 	}
 
+	&.sndmakes{
+		background-image: url(/img/sndmakes.jpg);
+		@include background-size(cover);
+	}
+
+	&.malaysia{
+		background-image: url(/img/malaysia-plane.jpg);
+		@include background-size(cover);
+	}
+
 	&:hover {
 		opacity: 1;
 	}

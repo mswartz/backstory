@@ -742,32 +742,66 @@ TIMELINE
 HOME SCREEN
 
 *************************/
-.main-tz-mod {
-  margin: 40px 0 0 0;
+.home-tiles {
+  margin: 0px 0 0 0;
 }
 @media (min-width: 599px) {
-  .main-tz-mod {
+  .home-tiles {
     margin-left: -10px;
     *zoom: 1;
   }
-  .main-tz-mod:after {
+  .home-tiles:after {
     content: "";
     display: table;
     clear: both;
   }
-  .main-tz-mod > .media-block {
+  .home-tiles > .media-block {
     float: left;
     padding-left: 10px;
     width: 50%;
   }
-  .main-tz-mod > .media-block:nth-of-type(2n+3) {
+  .home-tiles > .media-block:nth-of-type(2n+3) {
     clear: left;
   }
-  .main-tz-mod > .media-block.n3 {
+  .home-tiles > .media-block.n3 {
     clear: left;
   }
 }
 
+@media (min-width: 600px) {
+  .home-cover {
+    margin: 40px 0 0 0;
+    *zoom: 1;
+  }
+  .home-cover:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .home-cover .col-1 {
+    float: left;
+    width: 49.5%;
+  }
+  .home-cover .col-2 {
+    float: right;
+    width: 50%;
+    padding-left: 6px;
+  }
+
+  .lead-tz {
+    height: 600px;
+  }
+  .lead-tz .tile-h1 {
+    font-size: 60px;
+  }
+
+  .off-lead-tz {
+    height: 295px;
+  }
+  .off-lead-tz .tile-h1 {
+    font-size: 32px;
+  }
+}
 .main-tz {
   opacity: .8;
   padding: 10px 0;

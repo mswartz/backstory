@@ -5,14 +5,47 @@ HOME SCREEN
 *************************/
 
 
-.main-tz-mod {
-	margin: 40px 0 0 0;
-	
+.home-tiles {
+	margin: 0px 0 0 0;
+
 	@media(min-width: 599px){
 		@include media-grid(2, 10px);
 	}
 }
 
+@media (min-width: 600px){
+	.home-cover {
+		margin: 40px 0 0 0;
+		@include pie-clearfix;
+
+		.col-1 {
+			float: left;
+			width: 49.5%;
+		}
+
+		.col-2 {
+			float: right;
+			width: 50%;
+			padding-left: 6px;
+		}
+	}
+
+	.lead-tz {
+		height: 600px;
+
+		.tile-h1 {
+			font-size: 60px;
+		}
+	}
+
+	.off-lead-tz {
+		height: 295px;
+
+		.tile-h1 {
+			font-size: 32px;
+		}
+	}
+}
 
 .main-tz {
 	opacity: .8;

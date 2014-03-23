@@ -1036,6 +1036,19 @@ body {
   }
 }
 
+.footer {
+  padding: 10px;
+  background-color: #FFF;
+  font-family: "Roboto";
+  color: #666;
+}
+.footer a {
+  color: #ed1846;
+}
+.footer .h4 {
+  margin-bottom: 20px;
+}
+
 .resp-img {
   width: 100%;
 }

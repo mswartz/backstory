@@ -131,6 +131,21 @@ body {
 	}
 }
 
+.footer {
+	padding: 10px;
+	background-color: #FFF;
+	font-family: $roboto;
+	color: #666;
+
+	a {
+		color: $accent;
+	}
+
+	.h4 {
+		margin-bottom: 20px;
+	}
+}
+
 .resp-img {
 	width: 100%;
 }

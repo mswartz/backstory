@@ -745,7 +745,7 @@ HOME SCREEN
 .home-tiles {
   margin: 0px 0 0 0;
 }
-@media (min-width: 599px) {
+@media (min-width: 599px) and (max-width: 800px) {
   .home-tiles {
     margin-left: -10px;
     *zoom: 1;
@@ -764,6 +764,28 @@ HOME SCREEN
     clear: left;
   }
   .home-tiles > .media-block.n3 {
+    clear: left;
+  }
+}
+@media (min-width: 801px) {
+  .home-tiles {
+    margin-left: -10px;
+    *zoom: 1;
+  }
+  .home-tiles:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .home-tiles > .media-block {
+    float: left;
+    padding-left: 10px;
+    width: 25%;
+  }
+  .home-tiles > .media-block:nth-of-type(4n+5) {
+    clear: left;
+  }
+  .home-tiles > .media-block.n5 {
     clear: left;
   }
 }

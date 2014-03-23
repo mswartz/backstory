@@ -8,8 +8,12 @@ HOME SCREEN
 .home-tiles {
 	margin: 0px 0 0 0;
 
-	@media(min-width: 599px){
+	@media(min-width: 599px) and (max-width: 800px){
 		@include media-grid(2, 10px);
+	}
+
+	@media(min-width: 801px) {
+		@include media-grid(4, 10px);
 	}
 }
 

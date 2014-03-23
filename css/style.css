@@ -646,7 +646,7 @@ TIMELINE
 }
 @media (max-width: 599px) {
   .story-header.jayz {
-    background-image: url(/img/jayz-bg.jpg);
+    background-image: url(/img/malaysia-plane.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -838,7 +838,7 @@ HOME SCREEN
   min-height: 190px;
 }
 .main-tz.jayz {
-  background-image: url(/img/jayz-bg.jpg);
+  background-image: url(/img/malaysia-plane.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -908,7 +908,7 @@ body {
 }
 @media (min-width: 600px) {
   body.jayz {
-    background-image: url(/img/jayz-bg.jpg);
+    background-image: url(/img/malaysia-plane.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     -webkit-background-size: cover;

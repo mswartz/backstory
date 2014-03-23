@@ -1,0 +1,91 @@
+.docs {
+	background-color: #FFF;
+}
+
+.docs-splash {
+	@include trans;
+	height: 150px;
+	background-color: $accent;
+	background-image: url(/img/docs-header.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	@include background-size(100%);
+
+	@media(min-width: 800px){
+		height: 400px;
+	}
+}
+
+.docs-mod {
+	max-width: 600px;
+	margin: 20px auto;
+
+	font-family: $roboto;
+
+	.h1 {
+		margin-bottom: 20px;
+	}
+
+	.txt {
+		font-size: 18px;
+		margin: 0 0 20px 0;
+		line-height: 28px;
+		color: #333;
+	}
+
+	.byline {
+		font-size: 14px;
+		margin: 0 0 20px 0;
+		color: #CCC;
+		a {
+			color: $accent;
+		}
+	}
+}
+
+.docs-visual {
+	padding: 20px 0;
+	@include pie-clearfix;
+
+	&.full {
+		width: 100%;
+
+		@media(min-width: 800px){
+			width: 120%;
+			margin-left: -10%;
+		}
+	}
+
+	&.side-by-side {
+		.panel {
+			width: 45%;
+			float: left;
+			margin-right: 5%;
+		}
+	}
+
+	img {
+		width: 100%;
+	}
+}
+
+.docs-btn {
+	display: block;
+	width: 200px;
+	margin: 20px auto;
+	padding: 10px 20px;
+	text-align: center;
+	color: #FFF;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: $accent;
+	@include border-radius(8px);
+}
+
+.docs-h3 {
+	font-weight: bold;
+	font-family: $roboto;
+	font-size: 22px;
+	color: #000;
+	margin: 0 0 20px 0;
+}

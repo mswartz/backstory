@@ -12,13 +12,18 @@
 	@include background-size(100%);
 
 	@media(min-width: 800px){
-		height: 400px;
+		height: 350px;
+	}
+
+	&.bottom {
+		background-position: bottom center;
 	}
 }
 
 .docs-mod {
 	max-width: 600px;
 	margin: 20px auto;
+	padding: 0 10px;
 
 	font-family: $roboto;
 
@@ -31,10 +36,14 @@
 		margin: 0 0 20px 0;
 		line-height: 28px;
 		color: #333;
+
+		a {
+			color: $accent;
+		}
 	}
 
 	.byline {
-		font-size: 14px;
+		font-size: 16px;
 		margin: 0 0 20px 0;
 		color: #CCC;
 		a {

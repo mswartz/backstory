@@ -478,13 +478,17 @@ NAVIGATION
 }
 @media (min-width: 800px) {
   .docs-splash {
-    height: 400px;
+    height: 350px;
   }
+}
+.docs-splash.bottom {
+  background-position: bottom center;
 }
 
 .docs-mod {
   max-width: 600px;
   margin: 20px auto;
+  padding: 0 10px;
   font-family: "Roboto";
 }
 .docs-mod .h1 {
@@ -496,8 +500,11 @@ NAVIGATION
   line-height: 28px;
   color: #333;
 }
+.docs-mod .txt a {
+  color: #ed1846;
+}
 .docs-mod .byline {
-  font-size: 14px;
+  font-size: 16px;
   margin: 0 0 20px 0;
   color: #CCC;
 }

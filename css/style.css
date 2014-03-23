@@ -1025,6 +1025,7 @@ TYPOGRAPHY
 .h5 {
   font-family: "Roboto";
   font-size: 12px;
+  margin-bottom: 20px;
   text-transform: uppercase;
 }
 

@@ -423,6 +423,10 @@ NAVIGATION
 .nav-filters li:hover, .nav-trending li:hover {
   color: #FFF;
 }
+.nav-filters li a, .nav-trending li a {
+  color: #FFF;
+  text-decoration: none;
+}
 
 .nav-filters li.favorites {
   background-image: url(/img/star.svg);

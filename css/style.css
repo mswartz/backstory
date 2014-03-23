@@ -742,6 +742,9 @@ TIMELINE
 HOME SCREEN
 
 *************************/
+.main-tz-mod {
+  margin: 40px 0 0 0;
+}
 @media (min-width: 599px) {
   .main-tz-mod {
     margin-left: -10px;

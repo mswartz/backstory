@@ -9,7 +9,7 @@ jQuery(document).ready(function(){
 		$('.menu-drawer').toggleClass('active');
 	});
 
-	$('#panel-trigger').on('click', function(){
+	$('.story-header').on('click', function(){
 		$('.story-header-panel').toggleClass('active');
 	});
 

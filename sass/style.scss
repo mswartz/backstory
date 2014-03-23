@@ -71,6 +71,13 @@ body {
 			@include background-size(cover);
 		}
 
+		&.sndmakes {
+			background-image: url(/img/sndmakes.jpg);
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			@include background-size(cover);
+		}
+
 	}
 }
 

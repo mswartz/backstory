@@ -46,7 +46,7 @@ NAVIGATION
 	}
 
 	&.back {
-		background-image: url(/img/back.svg);
+		background-image: url(/backstory/img/back.svg);
 		background-size: 70%;
 		background-repeat: no-repeat;
 		background-position: center center;
@@ -57,7 +57,7 @@ NAVIGATION
 	}
 
 	&.reverse {
-		background-image: url(/img/reverse.svg);
+		background-image: url(/backstory/img/reverse.svg);
 		background-size: 70%;
 		background-repeat: no-repeat;
 		background-position: center center;
@@ -68,7 +68,7 @@ NAVIGATION
 	}
 
 	&.user {
-		background-image: url(/img/twitter.png);
+		background-image: url(/backstory/img/twitter.png);
 		background-size: 100%;
 		background-repeat: no-repeat;
 		background-position: center center;
@@ -76,7 +76,7 @@ NAVIGATION
 	}
 
 	&.menu {
-		background-image: url(/img/menu.svg);
+		background-image: url(/backstory/img/menu.svg);
 		background-size: 70%;
 		background-repeat: no-repeat;
 		background-position: center center;
@@ -105,7 +105,7 @@ NAVIGATION
 
 .nav-search-input {
 	background-color: rgba(0,0,0,.9);
-	background-image: url(/img/search.svg);
+	background-image: url(/backstory/img/search.svg);
 	background-size: 10%;
 	background-repeat: no-repeat;
 	background-position: right center;
@@ -141,7 +141,7 @@ NAVIGATION
 .nav-filters {
 	li {
 		&.favorites {
-			background-image: url(/img/star.svg);
+			background-image: url(/backstory/img/star.svg);
 			background-position: left center;
 			background-repeat: no-repeat;
 			background-size: 10%;
@@ -149,7 +149,7 @@ NAVIGATION
 		}
 
 		&.latest {
-			background-image: url(/img/lightning.svg);
+			background-image: url(/backstory/img/lightning.svg);
 			background-position: left center;
 			background-repeat: no-repeat;
 			background-size: 10%;
@@ -157,7 +157,7 @@ NAVIGATION
 		}
 
 		&.popular {
-			background-image: url(/img/popular.svg);
+			background-image: url(/backstory/img/popular.svg);
 			background-position: left center;
 			background-repeat: no-repeat;
 			background-size: 10%;
@@ -165,7 +165,7 @@ NAVIGATION
 		}
 
 		&.trending {
-			background-image: url(/img/trending.svg);
+			background-image: url(/backstory/img/trending.svg);
 			background-position: left center;
 			background-repeat: no-repeat;
 			background-size: 10%;

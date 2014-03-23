@@ -68,7 +68,7 @@ ARTICLE TOOLS
 	@include inline-block;
 	width: 25px;
 	height: 10px;
-	background-image: url(/img/hotness.svg);
+	background-image: url(/backstory/img/hotness.svg);
 	background-size: 40%;
 	background-repeat: no-repeat;
 	background-position: right top;
@@ -78,7 +78,7 @@ ARTICLE TOOLS
 	@include inline-block;
 	width: 25px;
 	height: 10px;
-	background-image: url(/img/star.svg);
+	background-image: url(/backstory/img/star.svg);
 	background-size: 40%;
 	background-repeat: no-repeat;
 	background-position: right top;
@@ -114,7 +114,7 @@ TIMELINE
 }
 
 .timeline-update {
-	background-image: url(/img/timeline-gray.svg);
+	background-image: url(/backstory/img/timeline-gray.svg);
 	background-repeat: repeat-y;
 	background-position: 14px center;
 	background-size: 4px;
@@ -134,7 +134,7 @@ TIMELINE
 
 	&.open {
 		padding: 20px 0;
-		background-image: url(/img/timeline.svg);
+		background-image: url(/backstory/img/timeline.svg);
 
 		.update-num {
 			background-color: $accent;
@@ -155,7 +155,7 @@ TIMELINE
 }
 
 .story-header {
-	background-image: url(/img/timeline-gray.svg);
+	background-image: url(/backstory/img/timeline-gray.svg);
 	background-repeat: repeat-y;
 	background-position: 14px center;
 	background-size: 4px;
@@ -190,7 +190,7 @@ TIMELINE
 
 	@media(max-width:599px){
 		&.jayz {
-			background-image: url(/img/jayz-bg.jpg);
+			background-image: url(/backstory/img/jayz-bg.jpg);
 			background-attachment: fixed;
 			background-repeat: no-repeat;
 			background-position: center center;
@@ -198,7 +198,7 @@ TIMELINE
 		}
 
 		&.sndmakes {
-			background-image: url(/img/sndmakes.jpg);
+			background-image: url(/backstory/img/sndmakes.jpg);
 			background-attachment: fixed;
 			background-repeat: no-repeat;
 			background-position: center center;
@@ -206,7 +206,7 @@ TIMELINE
 		}
 
 		&.malaysia {
-			background-image: url(/img/malaysia-plane.jpg);
+			background-image: url(/backstory/img/malaysia-plane.jpg);
 			background-attachment: fixed;
 			background-repeat: no-repeat;
 			background-position: center center;
@@ -238,7 +238,7 @@ TIMELINE
 	background-color: darken($gray, 10%);
 
 	&.star {
-		background-image: url(/img/star.svg);
+		background-image: url(/backstory/img/star.svg);
 		background-size: 50%;
 		background-repeat: no-repeat;
 		background-position: center center;

@@ -51,35 +51,35 @@ body {
 
 	@media(min-width: 600px){
 		&.jayz {
-			background-image: url(/img/jayz-bg.jpg);
+			background-image: url(/backstory/img/jayz-bg.jpg);
 			background-attachment: fixed;
 			background-repeat: no-repeat;
 			@include background-size(cover);
 		}
 
 		&.philjackson {
-			background-image: url(/img/phil-jackson.jpg);
+			background-image: url(/backstory/img/phil-jackson.jpg);
 			background-attachment: fixed;
 			background-repeat: no-repeat;
 			@include background-size(cover);
 		}
 
 		&.syria {
-			background-image: url(/img/syria.jpg);
+			background-image: url(/backstory/img/syria.jpg);
 			background-attachment: fixed;
 			background-repeat: no-repeat;
 			@include background-size(cover);
 		}
 
 		&.sndmakes {
-			background-image: url(/img/sndmakes.jpg);
+			background-image: url(/backstory/img/sndmakes.jpg);
 			background-attachment: fixed;
 			background-repeat: no-repeat;
 			@include background-size(cover);
 		}
 
 		&.malaysia {
-			background-image: url(/img/malaysia-plane.jpg);
+			background-image: url(/backstory/img/malaysia-plane.jpg);
 			background-attachment: fixed;
 			background-repeat: no-repeat;
 			@include background-size(cover);
@@ -146,7 +146,7 @@ body {
 	}
 }
 
-.resp-img {
+.resp-/backstory/img {
 	width: 100%;
 }
 

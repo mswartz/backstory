@@ -339,7 +339,7 @@ NAVIGATION
   top: 8px;
 }
 .nav-btn.back {
-  background-image: url(/img/back.svg);
+  background-image: url(/backstory/img/back.svg);
   background-size: 70%;
   background-repeat: no-repeat;
   background-position: center center;
@@ -348,7 +348,7 @@ NAVIGATION
   opacity: .5;
 }
 .nav-btn.reverse {
-  background-image: url(/img/reverse.svg);
+  background-image: url(/backstory/img/reverse.svg);
   background-size: 70%;
   background-repeat: no-repeat;
   background-position: center center;
@@ -361,7 +361,7 @@ NAVIGATION
   transform: rotate(-360deg);
 }
 .nav-btn.user {
-  background-image: url(/img/twitter.png);
+  background-image: url(/backstory/img/twitter.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center center;
@@ -372,7 +372,7 @@ NAVIGATION
   border-radius: 4px;
 }
 .nav-btn.menu {
-  background-image: url(/img/menu.svg);
+  background-image: url(/backstory/img/menu.svg);
   background-size: 70%;
   background-repeat: no-repeat;
   background-position: center center;
@@ -400,7 +400,7 @@ NAVIGATION
 
 .nav-search-input {
   background-color: rgba(0, 0, 0, 0.9);
-  background-image: url(/img/search.svg);
+  background-image: url(/backstory/img/search.svg);
   background-size: 10%;
   background-repeat: no-repeat;
   background-position: right center;
@@ -429,28 +429,28 @@ NAVIGATION
 }
 
 .nav-filters li.favorites {
-  background-image: url(/img/star.svg);
+  background-image: url(/backstory/img/star.svg);
   background-position: left center;
   background-repeat: no-repeat;
   background-size: 10%;
   padding-left: 20px;
 }
 .nav-filters li.latest {
-  background-image: url(/img/lightning.svg);
+  background-image: url(/backstory/img/lightning.svg);
   background-position: left center;
   background-repeat: no-repeat;
   background-size: 10%;
   padding-left: 20px;
 }
 .nav-filters li.popular {
-  background-image: url(/img/popular.svg);
+  background-image: url(/backstory/img/popular.svg);
   background-position: left center;
   background-repeat: no-repeat;
   background-size: 10%;
   padding-left: 20px;
 }
 .nav-filters li.trending {
-  background-image: url(/img/trending.svg);
+  background-image: url(/backstory/img/trending.svg);
   background-position: left center;
   background-repeat: no-repeat;
   background-size: 10%;
@@ -525,7 +525,7 @@ ARTICLE TOOLS
   *display: inline;
   width: 25px;
   height: 10px;
-  background-image: url(/img/hotness.svg);
+  background-image: url(/backstory/img/hotness.svg);
   background-size: 40%;
   background-repeat: no-repeat;
   background-position: right top;
@@ -540,7 +540,7 @@ ARTICLE TOOLS
   *display: inline;
   width: 25px;
   height: 10px;
-  background-image: url(/img/star.svg);
+  background-image: url(/backstory/img/star.svg);
   background-size: 40%;
   background-repeat: no-repeat;
   background-position: right top;
@@ -576,7 +576,7 @@ TIMELINE
 }
 
 .timeline-update {
-  background-image: url(/img/timeline-gray.svg);
+  background-image: url(/backstory/img/timeline-gray.svg);
   background-repeat: repeat-y;
   background-position: 14px center;
   background-size: 4px;
@@ -599,7 +599,7 @@ TIMELINE
 }
 .timeline-update.open {
   padding: 20px 0;
-  background-image: url(/img/timeline.svg);
+  background-image: url(/backstory/img/timeline.svg);
 }
 .timeline-update.open .update-num {
   background-color: #ed1846;
@@ -615,7 +615,7 @@ TIMELINE
 }
 
 .story-header {
-  background-image: url(/img/timeline-gray.svg);
+  background-image: url(/backstory/img/timeline-gray.svg);
   background-repeat: repeat-y;
   background-position: 14px center;
   background-size: 4px;
@@ -650,7 +650,7 @@ TIMELINE
 }
 @media (max-width: 599px) {
   .story-header.jayz {
-    background-image: url(/img/jayz-bg.jpg);
+    background-image: url(/backstory/img/jayz-bg.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -660,7 +660,7 @@ TIMELINE
     background-size: cover;
   }
   .story-header.sndmakes {
-    background-image: url(/img/sndmakes.jpg);
+    background-image: url(/backstory/img/sndmakes.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -670,7 +670,7 @@ TIMELINE
     background-size: cover;
   }
   .story-header.malaysia {
-    background-image: url(/img/malaysia-plane.jpg);
+    background-image: url(/backstory/img/malaysia-plane.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -708,7 +708,7 @@ TIMELINE
   background-color: #d4d4d4;
 }
 .update-num.star {
-  background-image: url(/img/star.svg);
+  background-image: url(/backstory/img/star.svg);
   background-size: 50%;
   background-repeat: no-repeat;
   background-position: center center;
@@ -862,56 +862,56 @@ HOME SCREEN
   min-height: 190px;
 }
 .main-tz.jayz {
-  background-image: url(/img/jayz-bg.jpg);
+  background-image: url(/backstory/img/jayz-bg.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .main-tz.philjackson {
-  background-image: url(/img/philjackson.jpg);
+  background-image: url(/backstory/img/philjackson.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .main-tz.syria {
-  background-image: url(/img/syria.jpg);
+  background-image: url(/backstory/img/syria.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .main-tz.gaymarriage {
-  background-image: url(/img/gaymarriage.jpg);
+  background-image: url(/backstory/img/gaymarriage.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .main-tz.vick {
-  background-image: url(/img/vick.jpg);
+  background-image: url(/backstory/img/vick.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .main-tz.cash {
-  background-image: url(/img/cash.jpg);
+  background-image: url(/backstory/img/cash.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .main-tz.sndmakes {
-  background-image: url(/img/sndmakes.jpg);
+  background-image: url(/backstory/img/sndmakes.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .main-tz.malaysia {
-  background-image: url(/img/malaysia-plane.jpg);
+  background-image: url(/backstory/img/malaysia-plane.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -946,7 +946,7 @@ body {
 }
 @media (min-width: 600px) {
   body.jayz {
-    background-image: url(/img/jayz-bg.jpg);
+    background-image: url(/backstory/img/jayz-bg.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -955,7 +955,7 @@ body {
     background-size: cover;
   }
   body.philjackson {
-    background-image: url(/img/phil-jackson.jpg);
+    background-image: url(/backstory/img/phil-jackson.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -964,7 +964,7 @@ body {
     background-size: cover;
   }
   body.syria {
-    background-image: url(/img/syria.jpg);
+    background-image: url(/backstory/img/syria.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -973,7 +973,7 @@ body {
     background-size: cover;
   }
   body.sndmakes {
-    background-image: url(/img/sndmakes.jpg);
+    background-image: url(/backstory/img/sndmakes.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -982,7 +982,7 @@ body {
     background-size: cover;
   }
   body.malaysia {
-    background-image: url(/img/malaysia-plane.jpg);
+    background-image: url(/backstory/img/malaysia-plane.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -1049,7 +1049,7 @@ body {
   margin-bottom: 20px;
 }
 
-.resp-img {
+.resp- /backstory/ img {
   width: 100%;
 }
 

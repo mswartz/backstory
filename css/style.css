@@ -360,11 +360,16 @@ NAVIGATION
   -o-transform: rotate(-360deg);
   transform: rotate(-360deg);
 }
-.nav-btn.search {
-  background-image: url(/img/search.svg);
-  background-size: 70%;
+.nav-btn.user {
+  background-image: url(/img/twitter.png);
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center center;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
 }
 .nav-btn.menu {
   background-image: url(/img/menu.svg);

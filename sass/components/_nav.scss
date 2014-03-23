@@ -67,11 +67,12 @@ NAVIGATION
 		}
 	}
 
-	&.search {
-		background-image: url(/img/search.svg);
-		background-size: 70%;
+	&.user {
+		background-image: url(/img/twitter.png);
+		background-size: 100%;
 		background-repeat: no-repeat;
 		background-position: center center;
+		@include border-radius(4px);
 	}
 
 	&.menu {

@@ -6,7 +6,7 @@
 	@include trans;
 	height: 150px;
 	background-color: $accent;
-	background-image: url(/img/docs-header.jpg);
+	background-image: url(/backstory/img/docs-header.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	@include background-size(100%);
